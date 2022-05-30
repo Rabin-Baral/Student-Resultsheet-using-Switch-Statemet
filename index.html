@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="HeadingContainer">
+            <h2>Baral JS Project Development Center</h2>
+            <h4>Kathmandu, Nepal</h4>
+            <button type="submit" class = "btn btn-primary" id = "addStudents" onclick = "addStudents()">Add New Student</button>
+        </div>
+        <table class="table table-bordered">
+            <thead class = "thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Englisn</th>
+                    <th scope="col">Computer</th>
+                    <th scope="col">Math</th>
+                    <th scope="col">Science</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Percentage</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Result</th>
+                    <th scope = "col">Remove</th>
+                </tr>
+            </thead>
+       
+            <tbody id = "tbody">
+            </tbody>
+            <tfoot class="tfoot" >
+                <tr>
+                    <td scope = "col" colspan="7"><h3>Thank you</h3></td>
+                    <td scope = "col" colspan="3"><button type="reset" class = "btn btn-danger" id = "remStudents" onclick="cancel()">Remove All Students   </button></td>
+                </tr>
+                
+            
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
